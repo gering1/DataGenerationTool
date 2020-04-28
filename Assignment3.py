@@ -8,10 +8,10 @@ Name: Colton Gering
 Assignment 3
 CPSC 408
 '''
-db = mysql.connector.connect(
-    host="35.230.31.58",
-    user="root",
-    passwd="88KeysBaby!",
+db = mysql.connector.connect( 
+    host="",
+    user="",  #need to enter your own db server
+    passwd="",
     database="Assignment3DB"
 )
 myCursor = db.cursor()
