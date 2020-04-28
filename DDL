@@ -1,0 +1,64 @@
+create schema Assignment3DB collate utf8_general_ci;
+
+create table CompletedKeys
+(
+	UserID int null,
+	AMajorCompleted tinyint null,
+	CMajorCompleted tinyint null,
+	DMajorCompleted tinyint null,
+	EMajorCompleted tinyint null,
+	FMajorCompleted tinyint null,
+	BMajorCompleted tinyint null,
+	EFlatMajorCompleted tinyint null,
+	GFlatMajorCompleted tinyint null,
+	BFlatMajorCompleted tinyint null,
+	DFlatMajorCompleted tinyint null,
+	AFlatMajorCompleted tinyint null,
+	GMajorCompleted tinyint null,
+	DMinorCompleted tinyint null,
+	AMinorCompleted tinyint null,
+	FMinorCompleted tinyint null,
+	BMinorCompleted tinyint null,
+	CMinorCompleted tinyint null,
+	EMinorCompleted tinyint null,
+	ASharpMinorCompleted tinyint null,
+	DSharpMinorCompleted tinyint null,
+	GSharpMinorCompleted tinyint null,
+	CSharpMinorCompleted tinyint null,
+	FSharpMinorCompleted tinyint null,
+	GMinorCompleted tinyint null
+);
+
+create table Login
+(
+	UserID int null,
+	Username tinytext null,
+	password tinytext null
+);
+
+create table Profile
+(
+	CurrentPieces tinytext null,
+	CurrentKeys tinytext null,
+	CompletedPieces tinytext null,
+	FavoritePieces tinytext null,
+	FavoriteComposers tinytext null,
+	UserID int null
+);
+
+create table Scores
+(
+	UserID int auto_increment
+		primary key,
+	Grade char default 'F' null,
+	`High Score` int default 0 null
+);
+
+create table Themes
+(
+	UserID int auto_increment
+		primary key,
+	`First Color` varchar(40) null,
+	`Second Color` varchar(40) null
+);
+
