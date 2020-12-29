@@ -3,11 +3,6 @@ import csv
 fake = Faker()
 import random
 import mysql.connector
-'''
-Name: Colton Gering
-Assignment 3
-CPSC 408
-'''
 
 #enter your information here
 db = mysql.connector.connect(
